@@ -1,0 +1,52 @@
+%% nickhomework.sty - standard paper setup for homework
+
+\ProvidesPackage{nickhandout}
+
+\usepackage{amssymb, amsmath,amsthm, MinionPro}
+
+\def\us{\char`\_}
+
+\newcommand{\E}{\mbox{E}}
+\newcommand{\N}{\mbox{N}}
+\newcommand{\Exp}{\mbox{Exp}}
+\newcommand{\B}{\mbox{B}}
+\renewcommand{\P}{\mbox{P}}
+\newcommand{\Pbf}{\mathbf{P}}
+\newcommand{\pbf}{\mathbf{p}}
+\newcommand{\Qbf}{\mathbf{Q}}
+\newcommand{\Rbf}{\mathbf{R}}
+\newcommand{\Ibf}{\mathbf{I}}
+\newcommand{\Nbf}{\mathbf{N}}
+\newcommand{\Mbf}{\mathbf{M}}
+\newcommand{\Vbf}{\mathbf{V}}
+\newcommand{\Zerobf}{\mathbf{0}}
+\newcommand{\Onebf}{\mathbf{1}}
+\newcommand{\Ps}{\mbox{\scriptsize P}}
+
+\newcommand{\xbf}{\mathbf{x}}
+\newcommand{\Xbf}{\mathbf{X}}
+\newcommand{\ybf}{\mathbf{y}}
+\newcommand{\Ybf}{\mathbf{Y}}
+\newcommand{\bm}{\boldsymbol}
+
+\newcommand{\scalprod}[2]{\left\langle #1,#2 \right\rangle}
+\newcommand{\scalprodv}[2]{\scalprod{\vec{#1}}{\vec{#2}}} %includes vector arrows
+\newcommand{\scalprodV}[2]{\scalprod{\vect{#1}}{\vect{#2}}}
+\newcommand{\suchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;}
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{claim}{Claim}
+
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\newenvironment{solution}{\vspace{.1in}}{\vspace{.1in}}

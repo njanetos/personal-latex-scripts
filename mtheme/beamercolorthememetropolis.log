@@ -1,0 +1,41 @@
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2015.4.8)  8 JUN 2015 17:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/home/njanetos/.texmf/tex/latex/mtheme/beamercolorthememetropolis.sty
+(/home/njanetos/.texmf/tex/latex/mtheme/beamercolorthememetropolis.sty
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 6 languages loaded.
+
+LaTeX Warning: You have requested package `',
+               but the package provides `beamercolorthememetropolis'.
+
+Package: beamercolorthememetropolis 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \newif\if@
+               beamer@metropolis@blockbg
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.16 \newif\if@
+               beamer@metropolis@blockbg
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
+Here is how much of TeX's memory you used:
+ 10 strings out of 495626
+ 384 string characters out of 6186527
+ 46193 words of memory out of 5000000
+ 3311 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 7i,0n,5p,152b,14s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

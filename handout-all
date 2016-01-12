@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir output
+for file in *.tex; do
+	filename="${file%.*}"
+	handout $filename
+done
+clean-latex

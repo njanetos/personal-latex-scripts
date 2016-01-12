@@ -1,0 +1,25 @@
+\ifdefined\isfinal
+	\documentclass[11pt, fleqn]{article}
+	\usepackage{nickpaper}
+	\input{preamble.tex}
+	\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\begin{abstract}
+	\input{section/abstract.tex}
+	\end{abstract}
+	\pagebreak
+	\pagenumbering{arabic}
+	\onehalfspacing
+\else
+	\documentclass[11pt, fleqn]{article}
+	\usepackage{nickpaper}
+	\input{preamble.tex}
+	\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\begin{abstract}
+	\input{section/abstract.tex}
+	\end{abstract}
+	\strut
+\fi

@@ -1,0 +1,43 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.23)  24 MAY 2015 11:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/home/njanetos/.texmf/tex/latex/nickpaper/nickpaper.sty
+(/home/njanetos/.texmf/tex/latex/nickpaper/nickpaper.sty
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 6 languages loaded.
+
+LaTeX Warning: You have requested package `',
+               but the package provides `nickpaper'.
+
+Package: nickpaper 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                amssymb, amsmath,amsthm, natbib, indentfirst, endnotes, grap...
+
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                amssymb, amsmath,amsthm, natbib, indentfirst, endnotes, grap...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+ 
+Here is how much of TeX's memory you used:
+ 9 strings out of 494952
+ 416 string characters out of 6179835
+ 46189 words of memory out of 5000000
+ 3325 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 7i,0n,5p,168b,14s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

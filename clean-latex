@@ -1,0 +1,8 @@
+#!/bin/bash
+find . -type f -iname \*.aux -delete
+find . -type f -iname \*.log -delete
+find . -type f -iname \*.nav -delete
+find . -type f -iname \*.out -delete
+find . -type f -iname \*.snm -delete
+find . -type f -iname \*.toc -delete
+find . -type f -iname \*.vrb -delete

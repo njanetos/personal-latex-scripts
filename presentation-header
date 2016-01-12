@@ -1,0 +1,9 @@
+\ifdefined\ispresentation
+	\documentclass[9pt, compress, t, fleqn]{beamer}
+	\usepackage{nickpresentation}
+	\includeversion{animations}
+\else
+	\documentclass[9pt, compress, handout, t, fleqn]{beamer}
+	\usepackage{nickpresentationhandout}
+	\excludeversion{animations}
+\fi

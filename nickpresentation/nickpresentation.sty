@@ -1,0 +1,52 @@
+%% nickhomework.sty - standard paper setup for presentations
+
+\ProvidesPackage{nickpresentation}
+
+\usetheme{m}
+\usecolortheme{rose}
+
+\usepackage{amssymb, amsmath, mathpazo, natbib, amsthm, tikz, hyperref, sgame, cancel, booktabs, versions}
+\usepackage[scale=2]{ccicons}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+
+\newtheorem{assumption}{Assumption}
+\newtheorem{claim}{Claim}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{result}{Result}
+\newtheorem{proposition}{Proposition}
+
+\setbeamertemplate{itemize items}[square]
+
+\newcommand{\E}{\mbox{E}}
+\newcommand{\N}{\mbox{N}}
+\renewcommand{\P}{\mbox{P}}
+
+\newcommand{\scalprod}[2]{\left\langle #1,#2 \right\rangle}
+\newcommand{\scalprodv}[2]{\scalprod{\vec{#1}}{\vec{#2}}} %includes vector arrows
+\newcommand{\scalprodV}[2]{\scalprod{\vect{#1}}{\vect{#2}}}
+\newcommand{\suchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;}
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\author{Nick Janetos}
+\date{\today}
+
+\makeatletter
+\newenvironment<>{proofs}[1][\proofname]{%
+    \par
+    \def\insertproofname{#1\@addpunct{.}}%
+    \usebeamertemplate{proof begin}#2}
+  {\usebeamertemplate{proof end}}
+\makeatother
