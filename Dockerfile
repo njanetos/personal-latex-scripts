@@ -9,7 +9,5 @@ RUN mkdir /usr/share/texmf/bibtex/bib
 
 COPY citations.bib /usr/share/texmf/bibtex/bib/
 
-RUN mkdir ~/.scripts
-
-COPY .scripts/ /root/.scripts/
+COPY .scripts /root/
 
