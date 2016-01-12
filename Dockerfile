@@ -11,4 +11,5 @@ COPY citations.bib /usr/share/texmf/bibtex/bib/
 
 RUN mkdir ~/.scripts
 
-COPY .scripts/ ~/.scripts
+COPY .scripts/ /root/.scripts/
+
