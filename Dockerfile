@@ -3,7 +3,7 @@ FROM svlentink/texlive-full:latest
 MAINTAINER njanetos <nejanetos@gmail.com>
 LABEL Description="Personal latex build environment"
 
-COPY mhandouttheme mtheme nickpaper nickpresentation nickpresentationhandout /usr/share/texmf/tex/latex/
+COPY packages /usr/share/texmf/tex/latex/
 
 RUN mkdir /usr/share/texmf/bibtex/bib
 
