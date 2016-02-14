@@ -4,7 +4,7 @@ MAINTAINER njanetos <nejanetos@gmail.com>
 LABEL Description="Personal latex build environment"
 
 RUN apt-get update && \
-    apt-get install -y git pdftk pdftotext && \
+    apt-get install -y git pdftk poppler-utils && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
