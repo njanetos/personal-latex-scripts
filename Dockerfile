@@ -13,9 +13,9 @@ RUN apt-get update && \
     cd git-lfs-1.1.1 && \
     ./install.sh && \
     cd .. && \
-    rm -rf git-lfs-1.1.1
-    
-    
+    rm -rf git-lfs-1.1.1 && \
+    git lfs install
+
 RUN mkdir -p /root/texmf/bibtex/bib && mkdir -p /root/texmf/tex/latex && mkdir .scripts
 
 COPY packages /root/texmf/tex/latex/
