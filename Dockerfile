@@ -6,7 +6,7 @@ LABEL Description="Personal latex build environment"
 RUN apt-get update && \
     apt-get install -y git pdftk poppler-utils wget && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
     wget https://github.com/github/git-lfs/releases/download/v1.1.1/git-lfs-linux-amd64-1.1.1.tar.gz && \
     tar -xzf git-lfs-linux-amd64-1.1.1.tar.gz && \
     rm git-lfs-linux-amd64-1.1.1.tar.gz && \
