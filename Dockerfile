@@ -16,10 +16,14 @@ RUN apt-get update && \
     rm -rf git-lfs-1.1.1 && \
     git lfs install
 
-RUN mkdir -p /root/texmf/bibtex/bib && mkdir -p /root/texmf/tex/latex && mkdir .scripts
+RUN mkdir -p /root/texmf/bibtex/bib && mkdir -p /root/texmf/tex/latex && mkdir .scripts && mkdir .fonts
 
 COPY packages /root/texmf/tex/latex/
 
 COPY citations.bib /root/texmf/bibtex/bib/
 
 COPY .scripts /root/.scripts/
+
+COPY fonts /root/.fonts
+
+RUN fc-cache -f -v
