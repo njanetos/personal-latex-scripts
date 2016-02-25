@@ -1,5 +1,5 @@
 \ifdefined\isfinal
-	\documentclass[11pt, fleqn]{article}
+	\documentclass[11pt, fleqn, t]{article}
 	\usepackage{nickpaper}
 	\input{preamble.tex}
 	\begin{document}
@@ -12,7 +12,7 @@
 	\pagenumbering{arabic}
 	\onehalfspacing
 \else
-	\documentclass[11pt, fleqn]{article}
+	\documentclass[11pt, fleqn, t]{article}
 	\usepackage{nickpaper}
 	\input{preamble.tex}
 	\begin{document}

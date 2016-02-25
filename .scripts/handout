@@ -2,8 +2,19 @@
 
 name="$1"
 
-xelatex -jobname=$name"_handout" "\input{"$name".tex}"
+xelatex "\input{"$name".tex}"
+bibtex "$name"
+xelatex "\input{"$name".tex}"
+xelatex "\input{"$name".tex}"
+
+mv $name".pdf" $name"_handout.pdf"
+
 xelatex "\def\ispresentation{1} \input{"$name".tex}"
+bibtex "$name"
+xelatex "\def\ispresentation{1} \input{"$name".tex}"
+xelatex "\def\ispresentation{1} \input{"$name".tex}"
+
+mkdir output
 
 mv $name".pdf" output
 mv $name"_handout.pdf" output
