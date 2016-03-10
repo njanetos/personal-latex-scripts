@@ -4,7 +4,7 @@ MAINTAINER njanetos <nejanetos@gmail.com>
 LABEL Description="Personal latex build environment"
 
 RUN apt-get update && \
-    apt-get install -y git pdftk poppler-utils wget && \
+    apt-get install -y git pdftk poppler-utils wget gfortran liblapack-dev libfreetype6-dev pkg-config libpng-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     wget https://github.com/github/git-lfs/releases/download/v1.1.1/git-lfs-linux-amd64-1.1.1.tar.gz && \
@@ -15,6 +15,13 @@ RUN apt-get update && \
     cd .. && \
     rm -rf git-lfs-1.1.1 && \
     git lfs install
+
+RUN apt-get update && \
+    apt-get install -y libpng-dev python3 python3-pip r-base && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install matplotlib numpy scipy statsmodels pandas
 
 RUN mkdir -p /root/texmf/bibtex/bib && \
     mkdir -p /root/texmf/tex/latex && \
