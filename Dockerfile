@@ -22,3 +22,13 @@ COPY .scripts /root/.scripts/
 COPY fonts /root/.fonts
 
 RUN fc-cache -f -v
+
+RUN pip3 install matplotlib
+
+RUN pip3 install numpy
+
+RUN pip3 install scipy
+
+RUN pip3 install statsmodels
+
+RUN pip3 install pandas
