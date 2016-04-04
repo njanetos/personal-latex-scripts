@@ -4,7 +4,7 @@ MAINTAINER njanetos <nejanetos@gmail.com>
 LABEL Description="Personal latex build environment"
 
 RUN apt-get update && \
-    apt-get install -y git pdftk poppler-utils wget gfortran liblapack-dev libfreetype6-dev pkg-config libpng-dev libpng-dev && \
+    apt-get install -y git pdftk poppler-utils wget make gfortran liblapack-dev libfreetype6-dev pkg-config libpng-dev libpng-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
