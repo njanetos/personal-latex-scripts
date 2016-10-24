@@ -2,17 +2,13 @@
 
 \ProvidesPackage{nickpaper}
 
-\usepackage{amssymb, amsmath,amsthm, natbib, indentfirst, endnotes, graphicx, rotating, thmtools, thm-restate}
+\usepackage{amssymb, amsmath, amsthm, natbib, thm-restate}
 \usepackage[singlespacing]{setspace}
-\usepackage[multiple]{footmisc}
-\usepackage[colorlinks=true, hyperfootnotes=false]{hyperref}
+\usepackage[pdfauthor=Nick Janetos]{hyperref}
 \usepackage{tikz}
-\usetikzlibrary{patterns, decorations.pathreplacing}
-\hypersetup{colorlinks=true,linkcolor=purple,urlcolor=purple,citecolor=purple, pdfauthor=Nick Janetos}
+%\usetikzlibrary{patterns, decorations.pathreplacing}
 
-%\usepackage{MinionPro}
-
-\newtheorem*{example}{Example}
+\newtheorem{example}{Example}
 \newtheorem*{assumption*}{Assumption}
 \newtheorem*{result}{Result}
 
@@ -23,48 +19,16 @@
 \declaretheorem{assumption}
 \declaretheorem{claim}
 
-\renewcommand{\thefigure}{\arabic{figure}}
-
 \newenvironment{definition}[1][Definition]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 
 \usepackage[nohead]{geometry}
-\geometry{left=1.5in,right=1.5in,top=1.00in,bottom=1.0in}
-
-\def\us{\char`\_}
+\geometry{left=1.2in,right=1.2in,top=1.00in,bottom=1.0in}
 
 \newcommand{\E}{\mbox{E}}
 \newcommand{\N}{\mbox{N}}
-\newcommand{\U}{\mbox{U}}
-\newcommand{\Exp}{\mbox{Exp}}
-\newcommand{\B}{\mbox{B}}
 \renewcommand{\P}{\mbox{P}}
-\newcommand{\Pbf}{\mathbf{P}}
-\newcommand{\pbf}{\mathbf{p}}
-\newcommand{\Qbf}{\mathbf{Q}}
-\newcommand{\Rbf}{\mathbf{R}}
-\newcommand{\Ibf}{\mathbf{I}}
-\newcommand{\Nbf}{\mathbf{N}}
-\newcommand{\Mbf}{\mathbf{M}}
-\newcommand{\Vbf}{\mathbf{V}}
-\newcommand{\Zerobf}{\mathbf{0}}
-\newcommand{\Onebf}{\mathbf{1}}
-\newcommand{\Ps}{\mbox{\scriptsize P}}
-
-\newcommand{\xbf}{\mathbf{x}}
-\newcommand{\Xbf}{\mathbf{X}}
-\newcommand{\ybf}{\mathbf{y}}
-\newcommand{\Ybf}{\mathbf{Y}}
-\newcommand{\bm}{\boldsymbol}
 
 \let\oldhat\hat
-
-\newcommand{\scalprod}[2]{\left\langle #1,#2 \right\rangle}
-\newcommand{\scalprodv}[2]{\scalprod{\vec{#1}}{\vec{#2}}} %includes vector arrows
-\newcommand{\scalprodV}[2]{\scalprod{\vect{#1}}{\vect{#2}}}
-\newcommand{\suchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;}
-
-\newcommand{\abs}[1]{\lvert#1\rvert}
-\newcommand{\norm}[1]{\lVert#1\rVert}
 
 \date{\today}
